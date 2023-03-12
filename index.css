@@ -1,0 +1,63 @@
+/* Estilo del formulario */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+/* Estilo de los inputs y labels */
+label, input {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+input[type=number] {
+  width: 10rem;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+}
+
+/* Estilo del botón */
+button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+  background-color: #0077be;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Estilo del resultado */
+.resultado {
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Colores de fondo para el resultado en función de la nota */
+.rojo {
+  background-color: #f44336;
+}
+
+.verde {
+  background-color: #4CAF50;
+}
+
+.naranja {
+  background-color: #ff9800;
+}
+
+.azul {
+  background-color: #0077be;
+}
+
+/* Mensaje de error para inputs no válidos */
+.mensaje-error {
+  color: red;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}

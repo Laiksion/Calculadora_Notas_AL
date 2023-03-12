@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de nota</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora de nota</h1>
+    <form>
+      <label for="cuestionarios">Cuestionarios:</label>
+      <div class="input-group">
+        <input type="text" id="cuestionarios" name="cuestionarios">
+        <select id="cuestionarios-units">
+          <option value="1">/ 1</option>
+          <option value="15">/ 15</option>
+          <option value="11">de 15 (11 notas)</option>
+        </select>
+      </div>
+      <label for="parcial1">Parcial 1:</label>
+      <div class="input-group">
+        <input type="text" id="parcial1" name="parcial1">
+        <select id="parcial1-units">
+          <option value="1.75">/ 1.75</option>
+          <option value="10">/ 10</option>
+        </select>
+      </div>
+      <label for="parcial2">Parcial 2:</label>
+      <div class="input-group">
+        <input type="text" id="parcial2" name="parcial2">
+        <select id="parcial2-units">
+          <option value="2.25">/ 2.25</option>
+          <option value="10">/ 10</option>
+        </select>
+      </div>
+      <label for="final">Final:</label>
+      <div class="input-group">
+        <input type="text" id="final" name="final">
+        <select id="final-units">
+          <option value="1">/ 1</option>
+          <option value="10">/ 10</option>
+        </select>
+      </div>
+      <button type="button" id="calculate-btn">Calcular Nota Evaluación</button>
+    </form>
+    <div class="result">
+      <label for="nota">Nota de la evaluación:</label>
+      <div id="nota"></div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
