@@ -35,7 +35,7 @@ function calcularNota() {
   }
   if (parcial1Tipo.value === '1.75') {
     ;
-  } else //=== '10'
+  } else {//=== '10'
     parcial1 = parcial1 / 10 * 1.75;
   }
   if (parcial2Tipo.value === '2.25') {
