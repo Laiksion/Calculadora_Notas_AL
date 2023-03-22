@@ -68,7 +68,7 @@ function calcularNota() {
   } else {
     notaFinalOutput.style.backgroundColor = "yellow";
   }
-
+}
 // Obtenemos el botón de calcular nota
 const calcularButton = document.getElementById("calculate-btn");
 
