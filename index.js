@@ -10,8 +10,6 @@ function calcularNota() {
   const parcial1Tipo = document.getElementById('parcial1-units');
   const parcial2Tipo = document.getElementById('parcial2-units');
   const finalTipo = document.getElementById('final-units');
-  // Acceder al valor seleccionado del elemento <select>
-  const selectedValue = selectElement.value;
 
   // Convertimos los valores a números
   let cuestionarios;
