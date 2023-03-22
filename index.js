@@ -33,17 +33,17 @@ function calcularNota() {
   } else { //cuestionariosTipo.value === '1'
     cuestionarios = parseFloat(cuestionariosInput.value);
   }
-  if (parcial1Tipo === '1.75') {
+  if (parcial1Tipo.value === '1.75') {
     ;
   } else //=== '10'
     parcial1 = parcial1 / 10 * 1.75
   }
-  if (parcial2Tipo === '2.25') {
+  if (parcial2Tipo.value === '2.25') {
     ;
   } else { // === '10
     parcial2 = parcial2 / 10 * 2.25;
   }
-  if (finalTipo === '10') {
+  if (finalTipo.value === '10') {
     final = final / 10 * 1;
   } else { // === '1'
     ;
