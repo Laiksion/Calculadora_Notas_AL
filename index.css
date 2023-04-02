@@ -38,6 +38,18 @@ button {
   text-align: center;
 }
 
+.titulo {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.discord {
+  margin-top: 6rem;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
 /* Colores de fondo para el resultado en función de la nota */
 .rojo {
   background-color: #f44336;
