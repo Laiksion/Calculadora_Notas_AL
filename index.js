@@ -1,6 +1,5 @@
 // Función para calcular la nota final de la evaluación
 function calcularNota() {
-  err.innerText = "VÁLIDO";
   // Obtenemos los valores introducidos por el usuario
   const cuestionariosInput = document.getElementById("cuestionarios");
   const parcial1Input = document.getElementById("parcial1");
@@ -12,7 +11,7 @@ function calcularNota() {
   const parcial2Tipo = document.getElementById('parcial2-units');
   const finalTipo = document.getElementById('final-units');
   const err = document.getElementById("err");
-
+ err.innerText = "VÁLIDO";
   // Convertimos los valores a números
   let cuestionarios;
   let parcial1 = parseFloat(parcial1Input.value);
@@ -87,7 +86,6 @@ function calcularNota() {
 
 // Función para calcular la que necesitas en el final
 function calcularNotaFin() {
-  err.innerText = "VÁLIDO";
   // Obtenemos los valores introducidos por el usuario
   const cuestionariosInput = document.getElementById("cuestionarios");
   const parcial1Input = document.getElementById("parcial1");
@@ -99,7 +97,7 @@ function calcularNotaFin() {
   const parcial2Tipo = document.getElementById('parcial2-units');
   const finalTipo = document.getElementById('final-units');
   const err = document.getElementById("err");
-
+ err.innerText = "VÁLIDO";
   // Convertimos los valores a números
   let cuestionarios;
   let parcial1 = parseFloat(parcial1Input.value);
