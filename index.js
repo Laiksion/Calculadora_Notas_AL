@@ -20,8 +20,12 @@ function calcularNota() {
 
   // Convertimos los valores si no están en el formato indicado
   if (cuestionariosTipo.value === '15') {
+        if (cuestionariosInput.value > 15) {
+      err.innerText = "COMPRUEBA LOS RANGOS";
+    }
     cuestionarios = parseFloat(cuestionariosInput.value) / 15;
   } else if (cuestionariosTipo.value === '11') {
+      err.innerText = "Sistema deprecado!";
     const cuestionariosValue = cuestionariosInput.value;
     const cuestionariosArray = cuestionariosValue.split(' ').map(parseFloat);
     cuestionariosArray.sort((a, b) => b - a);
@@ -30,6 +34,9 @@ function calcularNota() {
     const mediaCuestionarios = sumaCuestionarios / 10;
     cuestionarios = mediaCuestionarios / 15;
   } else { //cuestionariosTipo.value === '1'
+            if (cuestionariosInput.value > 1) {
+      err.innerText = "COMPRUEBA LOS RANGOS";
+    }
     cuestionarios = parseFloat(cuestionariosInput.value);
   }
   if (parcial1Tipo.value === '1.75') {
@@ -106,8 +113,12 @@ function calcularNotaFin() {
 
   // Convertimos los valores si no están en el formato indicado
   if (cuestionariosTipo.value === '15') {
+        if (cuestionariosInput.value > 15) {
+      err.innerText = "COMPRUEBA LOS RANGOS";
+    }
     cuestionarios = parseFloat(cuestionariosInput.value) / 15;
   } else if (cuestionariosTipo.value === '11') {
+      err.innerText = "Sistema deprecado!";
     const cuestionariosValue = cuestionariosInput.value;
     const cuestionariosArray = cuestionariosValue.split(' ').map(parseFloat);
     cuestionariosArray.sort((a, b) => b - a);
@@ -116,6 +127,9 @@ function calcularNotaFin() {
     const mediaCuestionarios = sumaCuestionarios / 10;
     cuestionarios = mediaCuestionarios / 15;
   } else { //cuestionariosTipo.value === '1'
+            if (cuestionariosInput.value > 1) {
+      err.innerText = "COMPRUEBA LOS RANGOS";
+    }
     cuestionarios = parseFloat(cuestionariosInput.value);
   }
   if (parcial1Tipo.value === '1.75') {
