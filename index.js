@@ -157,7 +157,7 @@ function calcularNotaFin() {
 
   // Calculamos la nota final
   //const notaFinal = 10 * final + (cuestionarios + parcial1 + parcial2) * (1 - final);
-  const notaFinal = (5 - (cuestionarios + parcial1 + parcial2)) / (10 - (cuestionarios + parcial1 + parcial2))
+  const notaFinal = ((5 - (cuestionarios + parcial1 + parcial2)) / (10 - (cuestionarios + parcial1 + parcial2)))*10;
 
   // Mostramos la nota final
   const notaFinalOutput = document.getElementById("nota");
