@@ -1,3 +1,5 @@
+//By Laiksion, copyrith 2022-2023
+
 // Función para calcular la nota final de la evaluación
 function calcularNota() {
   // Obtenemos los valores introducidos por el usuario
