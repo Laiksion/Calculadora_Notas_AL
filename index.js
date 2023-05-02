@@ -97,7 +97,7 @@ function calcularNotaFin() {
   const parcial2Tipo = document.getElementById('parcial2-units');
   const finalTipo = document.getElementById('final-units');
   const err = document.getElementById("err");
- err.innerText = "VÁLIDO";
+ err.innerText = "¡VÁLIDO!";
   // Convertimos los valores a números
   let cuestionarios;
   let parcial1 = parseFloat(parcial1Input.value);
