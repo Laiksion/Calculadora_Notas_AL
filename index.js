@@ -77,7 +77,7 @@ function calcularNota() {
 
   // Mostramos la nota final
   const notaFinalOutput = document.getElementById("nota");
-  notaFinalOutput.innerText = /*notaFinal.toFixed(2)*/(Math.round( notaFinal * 10 ) / 10).toFixed(1) + " EXACTA: " + notaFinal;
+  notaFinalOutput.innerText = /*notaFinal.toFixed(2)*/(Math.round( notaFinal * 10 ) / 10).toFixed(1) + " EXACTA: " + notaFinal; //New method
 
   // Cambiamos el color de fondo en función de la nota
   if (notaFinal.toFixed(2) < 5.00) {
