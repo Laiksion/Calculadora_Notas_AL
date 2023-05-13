@@ -77,7 +77,7 @@ function calcularNota() {
 
   // Mostramos la nota final
   const notaFinalOutput = document.getElementById("nota");
-  notaFinalOutput.innerText = notaFinal.toFixed(2) + " EXACTA: " + notaFinal;
+  notaFinalOutput.innerText = /*notaFinal.toFixed(2)*/Math.round( notaFinal * 10 ) / 10).toFixed(1) + " EXACTA: " + notaFinal;
 
   // Cambiamos el color de fondo en función de la nota
   if (notaFinal.toFixed(2) < 5.00) {
@@ -157,24 +157,13 @@ function calcularNotaFin() {
 
   // Calculamos la nota final
   //const notaFinal = 10 * final + (cuestionarios + parcial1 + parcial2) * (1 - final);
-  const notaFinal = ((5 - (cuestionarios + parcial1 + parcial2)) / (10 - (cuestionarios + parcial1 + parcial2)))*10;
+  const notaFinal = ((4.95 - (cuestionarios + parcial1 + parcial2)) / (10 - (cuestionarios + parcial1 + parcial2)))*10;
 
   // Mostramos la nota final
   const notaFinalOutput = document.getElementById("nota");
   notaFinalOutput.innerText = "Necesitas en el final: " + notaFinal.toFixed(2) + " EXACTA: " + notaFinal;
-
-  // Cambiamos el color de fondo en función de la nota
-  if (notaFinal.toFixed(2) < 5.00) {
-    notaFinalOutput.style.backgroundColor = "red";
-  } else if (notaFinal.toFixed(2) < 6.00) {
-    notaFinalOutput.style.backgroundColor = "green";
-  } else if (notaFinal.toFixed(2) < 8.00) {
-    notaFinalOutput.style.backgroundColor = "orange";
-  } else if (notaFinal.toFixed(2) < 9.00) {
-    notaFinalOutput.style.backgroundColor = "blue";
-  } else {
-    notaFinalOutput.style.backgroundColor = "yellow";
-  }
+  
+  notaFinalOutput.style.backgroundColor = "green";
 }
 // Obtenemos el botón de calcular nota
 const calcularButton = document.getElementById("calculate-btn");
